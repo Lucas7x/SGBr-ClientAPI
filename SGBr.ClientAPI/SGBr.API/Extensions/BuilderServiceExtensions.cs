@@ -18,5 +18,13 @@ namespace SGBr.API.Extensions
 
             return services;
         }
+
+        public static WebApplication MigrateDatabase(this WebApplication app)
+        {
+            using var scope = app.Services.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<DataContext>();
+            db.Database.Migrate();
+            return app;
+        }
     }
 }

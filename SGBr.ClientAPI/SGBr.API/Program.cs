@@ -28,6 +28,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MigrateDatabase();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
