@@ -4,7 +4,7 @@ Uma API robusta para gerenciamento de clientes desenvolvida em .NET 8, estrutura
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Framework:** .NET 8 (C#)
 * **ORM:** Entity Framework Core (EF Core)
@@ -15,7 +15,7 @@ Uma API robusta para gerenciamento de clientes desenvolvida em .NET 8, estrutura
 
 ---
 
-## 🧠 Decisões Técnicas
+## Decisões Técnicas
 
 A solução foi projetada focando na separação de preocupações e na pureza do domínio:
 
@@ -26,7 +26,7 @@ A solução foi projetada focando na separação de preocupações e na pureza d
 
 ---
 
-## 🚀 Como rodar o projeto
+## Como rodar o projeto
 
 ### 1. Pré-requisitos
 * [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
@@ -38,17 +38,14 @@ A solução foi projetada focando na separação de preocupações e na pureza d
    `git clone https://github.com/Lucas7x/SGBr-ClientAPI.git`
    `cd SGBr-ClientAPI`
 
-2. **Aplique as Migrations para criar o banco SQLite:**
-   `dotnet ef database update --project SGBr.Infrastrucure --startup-project SGBr.API`
-
-3. **Inicie a aplicação:**
+2. **Inicie a aplicação:**
    `dotnet run --project SGBr.API`
 
-4. **Acesse a documentação:**
-   A API estará disponível em `https://localhost:7001`. Teste os endpoints via Swagger em: `/swagger/index.html`.
+3. **Acesse a documentação:**
+   A API estará disponível em `http://localhost:5143`. Teste os endpoints via Swagger em: `/swagger/index.html`.
 
 ---
 
-## ✒️ Autor
+## Autor
 * **Lucas Xavier** - [GitHub](https://github.com/Lucas7x)
 
