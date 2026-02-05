@@ -20,6 +20,12 @@ namespace SGBr.Infrastrucure.Repository
             return client;
         }
 
+        public Client? GetByEmail(string email)
+        {
+            Client? client = _context.Clients.FirstOrDefault(c => c.Email == email);
+            return client;
+        }
+
         public List<Client> List()
         {
             var clients = _context.Clients.AsQueryable();
