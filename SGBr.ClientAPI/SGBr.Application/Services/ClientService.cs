@@ -4,11 +4,11 @@ using SGBr.Domain.Entities;
 
 namespace SGBr.Application.Services
 {
-    public class ClentService : IClientService
+    public class ClientService : IClientService
     {
         private readonly IClientRepository _clientRepository;
 
-        public ClentService(IClientRepository clientRepository)
+        public ClientService(IClientRepository clientRepository)
         {
             _clientRepository = clientRepository;
         }

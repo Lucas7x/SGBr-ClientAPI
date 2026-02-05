@@ -1,5 +1,6 @@
 using SGBr.API.Extensions;
 using SGBr.Application.Interfaces;
+using SGBr.Application.Services;
 using SGBr.Infrastrucure.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +17,7 @@ builder.Services.ConfigureDatabaseContext(builder.Configuration);
 
 // Registering Services and Repositories
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IClientService, IClientService>();
+builder.Services.AddScoped<IClientService, ClientService>();
 
 var app = builder.Build();
 
