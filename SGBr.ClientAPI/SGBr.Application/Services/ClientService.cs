@@ -16,8 +16,8 @@ namespace SGBr.Application.Services
         public ClientDTO Create(ClientCreateDTO clientDto)
         {
             Client? client = _clientRepository.GetByEmail(clientDto.Email);
-            if (client == null)
-                throw new ArgumentException("O E-mail informado já está sendo utilizado");
+            if (client != null)
+                throw new ArgumentException("O E-mail informado já está sendo utilizado", nameof(clientDto.Email));
 
             client = new Client
             {
